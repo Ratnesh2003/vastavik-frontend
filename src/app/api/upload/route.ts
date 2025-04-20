@@ -49,7 +49,7 @@ export async function POST(req: Request) {
   for (let i = 0; i < tokensData.availableTokens.length; i++) {
     const token = tokensData.availableTokens[i];
 
-    await delay(20000);
+    await delay(2000);
     
     try {
       const response = await fetch("https://ping.arya.ai/api/v1/deepfake-detection/image", {
